@@ -1,18 +1,18 @@
 Summary:	xprehashprinterlist application
 Summary(pl):	Aplikacja xprehashprinterlist
 Name:		xorg-app-xprehashprinterlist
-Version:	0.99.1
+Version:	1.0.1
 Release:	0.1
 License:	MIT
 Group:		X11/Applications
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC1/app/xprehashprinterlist-%{version}.tar.bz2
-# Source0-md5:	8b9a3325ce57992b6c9cad0f3c143f0b
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/app/xprehashprinterlist-%{version}.tar.bz2
+# Source0-md5:	99ee20a9af25375895f5d7ebc1004163
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
 BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	xorg-lib-libXp-devel
-BuildRequires:	xorg-util-util-macros >= 0.99.1
+BuildRequires:	xorg-util-util-macros >= 0.99.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -37,14 +37,13 @@ Aplikacja xprehashprinterlist.
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT \
-	appmandir=%{_mandir}/man1
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog
+%doc COPYING ChangeLog
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/*.1x*
