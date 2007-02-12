@@ -1,5 +1,5 @@
 Summary:	xprehashprinterlist application
-Summary(pl.UTF-8):   Aplikacja xprehashprinterlist
+Summary(pl.UTF-8):	Aplikacja xprehashprinterlist
 Name:		xorg-app-xprehashprinterlist
 Version:	1.0.1
 Release:	1
