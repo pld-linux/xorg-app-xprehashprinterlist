@@ -1,5 +1,5 @@
 Summary:	xprehashprinterlist application
-Summary(pl):	Aplikacja xprehashprinterlist
+Summary(pl.UTF-8):   Aplikacja xprehashprinterlist
 Name:		xorg-app-xprehashprinterlist
 Version:	1.0.1
 Release:	1
@@ -18,7 +18,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 xprehashprinterlist application.
 
-%description -l pl
+%description -l pl.UTF-8
 Aplikacja xprehashprinterlist.
 
 %prep
