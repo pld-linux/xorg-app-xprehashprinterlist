@@ -2,7 +2,7 @@ Summary:	xprehashprinterlist application
 Summary(pl.UTF-8):	Aplikacja xprehashprinterlist
 Name:		xorg-app-xprehashprinterlist
 Version:	1.0.1
-Release:	2
+Release:	3
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/app/xprehashprinterlist-%{version}.tar.bz2
@@ -46,4 +46,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc COPYING ChangeLog
 %attr(755,root,root) %{_bindir}/xprehashprinterlist
-%{_mandir}/man1/xprehashprinterlist.1x*
+%{_mandir}/man1/xprehashprinterlist.1*
